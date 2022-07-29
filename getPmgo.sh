@@ -10,10 +10,11 @@ mv pmgo /usr/local/bin
 # proceso de crear la carpeta que ejecutara el pmgo
 cd /
 mkdir src && src
-mkdir consumer
+mkdir consumer && cd consumer
 
 # aqui va el repositorio donde se tiene el codigo de golang
 
 git clone https://github.com/AxlMax/PlcGoConsumer.git
 
+sudo su
 pmgo start consumer/PlcGoConsumer consumer
